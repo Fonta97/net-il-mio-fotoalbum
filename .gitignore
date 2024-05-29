@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/net-il-mio-fotoalbum/Area/Identity/Pages/_ViewImports.cshtml.cs
+/net-il-mio-fotoalbum/Area/Identity/Pages/_ViewStart.cshtml
+/net-il-mio-fotoalbum/Area/Identity/Pages/_ViewImports.cshtml
+/net-il-mio-fotoalbum/Area/Identity/Pages/_ValidationScriptsPartial.cshtml
