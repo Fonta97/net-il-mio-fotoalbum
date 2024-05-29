@@ -1,8 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = "_LayoutUser";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section StyleUser{
+    <link rel="stylesheet" href="~/css/myuser.css" />
+}
+
+
+<div class="container">
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="welcome">Benvenuti nella piattaforma del mio Foto Album</h1>
+        <p class="back-button mt-3">
+            <a class="btn btn-outline-secondary mt-5" href="@Url.Action("Details", "Home")" role="button">
+                <b>Clicca qui per accedere</b>
+            </a>
+        </p>
+
+    </div>
 </div>
+
+

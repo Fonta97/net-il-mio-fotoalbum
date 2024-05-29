@@ -1,0 +1,75 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+body {
+    background-image: url('/img/background-hd.jpg');
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    margin-top: 605px;
+}
+
+
+.welcome {
+    color: rgb(203,161,99);
+    font-weight: bold;
+    font-size: 43px;
+    margin-bottom: 80px;
+}
+
+.contact {
+    color: rgb(203,161,99);
+    font-weight: bold;
+}
+
+.album {
+   background-color: rgb(217,194,123);
+   padding-top: 15px;
+   width: 1350px;
+}
+
+.title {
+   font-size: 50px;
+   margin-top: 40px;
+   margin-bottom: 60px;
+}
+
+.card {
+    height: 630px;
+    margin-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-photo {
+    display: block;
+    transform: scale(1);
+    transition: all .2s linear;
+}
+
+.card-photo:hover {
+   transform: scale(1.1);
+   z-index: 3;
+}
+
+.form-message{
+    width: 1120px;
+}
+
+.no-photo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 300px;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}

@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace net_il_mio_fotoalbum.Models.Database_Models
 {
@@ -12,6 +15,9 @@ namespace net_il_mio_fotoalbum.Models.Database_Models
         public string Name { get; set; }
 
 
+        // Creo la relazione N:N con la classe Photo
+
+        [JsonIgnore]
         public List<Photo>? Photos { get; set; }
 
 

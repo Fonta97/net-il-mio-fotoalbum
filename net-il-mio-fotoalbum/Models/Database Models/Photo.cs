@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using net_il_mio_fotoalbum.Validation_Attributes;
 
@@ -35,7 +36,7 @@ namespace net_il_mio_fotoalbum.Models.Database_Models
         // Creo la relazione N:N con la classe Category
         public List<Category>? Categories { get; set; }
 
-
+        
         public Photo()
         {
 
@@ -48,7 +49,10 @@ namespace net_il_mio_fotoalbum.Models.Database_Models
             this.ImageUrl = image;
         }
 
-
-
+        internal Photo? Include(Func<object, object> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
+
